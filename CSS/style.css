@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+
+.menu {
+    background-color: #000042;
+}
+
+.logo-aqua {
+    width: 160px;
+}
+
+.nav-link {
+    color: #F7ECE1;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-link:hover {
+    color: #f5993d;
+}
+
+.nav-link.active {
+    color: #87F1FF;
+    font-weight: 700;
+}
+
+.navbar-toggler-icon {
+  background-color: #F7ECE1;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url("../imagenes/mujer-nadando.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .overlay {
+  background: rgba(189, 189, 189, 0.35);
+  color: #000042;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+}
+.banner h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px;
+  color: #000042;
+}
+
+.produc-carrito {
+    background-color: #87F1FF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #000042;
+    border: 1px solid #000042;
+    border-radius: 10px;
+}
+
+.produc-carrito .informacion {
+    text-align: center;
+}
+
+.produc-carrito .informacion h6 {
+    font-size: 1rem;
+}
+
+.produc-carrito .informacion p {
+    font-size: 0.9rem;
+}
+
+.produc-carrito .informacion div {
+    justify-content: center;
+}
+
+.compra {
+    background-color: #000042;
+    color: white;
+}
+
+.compra:hover {
+    background-color: #87F1FF;
+    color: #000042;
+}
+
+.card {
+  text-align: center;       
+  display: flex;             
+  flex-direction: column;            
+  width: 290px;   
+  height: 480px;  
+  background-color: #87F1FF;
+  border: 2px solid #000042;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: #000042;
+}
+
+.card .info img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .info h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.card .info p {
+    margin-bottom: 0;
+}
+
+.btn-agregar, .card-comodidad, .card-diseno, .produc-carrito .cantidad {
+    background-color: #E56399;
+    color: white;
+}
+
+.btn-agregar:hover{
+    background-color: #C02163;
+}
+
+.card-valores {
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 220px;
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.card-valores h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.nadadora{
+    max-width: 300px !important;
+}
+
+.card-calidad {
+    background-color: #87F1FF; 
+    color: #000042;
+}
+
+footer {
+    background-color: #000042 !important; 
+}
+

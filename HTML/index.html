@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <title>AquaStyle</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo-aqua" src="../imagenes/logo-aqua-style.png" alt="AquaStyle">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse nav-pills pe-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto align-items-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading1">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">Quiénes somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary position-relative carrito"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+
+                                <i class="bi bi-cart-plus"></i>
+                                <span id="contador-carrito"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <header class="banner">
+        <div class="overlay">
+            <h1>Bienvenidos a AquaStyle</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carrito -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasScrolling">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div id="productos-carrito"></div>
+
+                <div class="mt-3 border-top pt-3">
+                    <h5>Total: $<span id="total-carrito">0</span></h5>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-danger mt-3" onclick="vaciarCarrito()">Vaciar carrito</button>
+                    <button class="btn compra mt-3" onclick="finalizarCompra()">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <section id="scrollspyHeading1">
+            <h2>Nueva colección</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-5 m-5">
+                <div class="card" data-id="1">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="2">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="3">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="4">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="5">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="6">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="7">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="8">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="9">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="10">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="11">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="12">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="13">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="14">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="15">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="16">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="17">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="18">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="19">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+
+                <div class="card" data-id="20">
+                    <div class="info"></div>
+                    <div class="acciones text-center">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Quines somos -->
+        <section id="scrollspyHeading2" class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Nuestra misión</h1>
+                    <p>
+                        En AquaStyle creemos que la natación es libertad, equilibrio y confianza.
+                        Diseñamos ropa de baño que combina rendimiento y estilo.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="../imagenes/nadadora.jpg" class="nadadora rounded-3" alt="Nadadora">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VALORES ================= -->
+        <section class="d-flex flex-wrap justify-content-center gap-3">
+            <div class="card-valores card-comodidad">
+                <h3>COMODIDAD</h3>
+                <p>Nuestras prendas se sienten como una segunda piel, brindándote total libertad de movimiento.</p>
+            </div>
+
+            <div class="card-valores card-calidad">
+                <h3>CALIDAD</h3>
+                <p>Utilizamos materiales resistentes al cloro y al sol, para que tu equipo te acompañe por muchas temporadas.</p>
+            </div>
+
+            <div class="card-valores card-diseno">
+                <h3>DISEÑO</h3>
+                <p>Creemos en la belleza de lo funcional que te hace ver bien, sin esfuerzo.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="text-white pt-5 pb-4">
+        <div class="container-fluid">
+
+            <div class="row pb-4">
+                <div class="col-md-4 mb-4">
+                    <img src="../imagenes/logo-aqua-style.png" width="120">
+                    <p class="text-white small mt-2">
+                        Moda hecha para el agua.
+                    </p>
+                    <p class="text-white small">
+                        Somos tu destino para la moda de baño: calidad, diseño y la confianza que necesitas para brillar
+                        en cada chapuzón.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="text-white mb-1"><i class="bi bi-geo-alt"></i> Bogotá</p>
+                    <p class="text-white mb-1"><i class="bi bi-phone"></i> +57 300 123 4567</p>
+                    <p class="text-white"><i class="bi bi-envelope"></i> info@aquastyle.com</p>
+
+                    <h5 class="fw-bold mt-4 mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled text-white small">
+                        <li><a href="#" class="text-white text-decoration-none">Políticas de Envío</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Devoluciones y Cambios</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Síguenos</h5>
+                    <div class="fs-4">
+                        <i class="bi bi-instagram me-3"></i>
+                        <i class="bi bi-facebook me-3"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                    <div class="bg-secondary bg-opacity-10 text-white p-3 mt-3">
+                        <p class="mb-0 text-center">¡Únete a nuestra comunidad AquaStyle para ofertas exclusivas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="text-center text-white small mb-0">
+                © 2025 AquaStyle. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../JS/productos.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
