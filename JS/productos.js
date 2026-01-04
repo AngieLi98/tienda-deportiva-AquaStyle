@@ -10,7 +10,7 @@ const productos = [
     id: 2,
     nombre: "Vestido de baño manga larga",
     precio: 106900,
-    imagen: "img/02vestido-bano-manga-larga.png" 
+    imagen: "img/02vestido-bano-manga-larga.png"
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ const productos = [
     nombre: "Vestido de baño conjunto estampado",
     precio: 126000,
     imagen: "img/10vestido-bano-conjunto-estampado.png"
-   },
+  },
   {
     id: 11,
     nombre: "Vestido de baño cargadera ancha",
