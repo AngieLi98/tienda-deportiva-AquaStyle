@@ -1,38 +1,39 @@
-let tarjetas = document.querySelectorAll(".card");
+document.addEventListener("DOMContentLoaded", () => {
 
-// Recorremos cada tarjeta encontrada
-tarjetas.forEach((card) => {
-  let id = card.getAttribute("data-id");
-  let idNumerico = parseInt(id);
+  let tarjetas = document.querySelectorAll(".card");
 
-  let producto = productos[idNumerico - 1];
-  if (producto) {
-    let info = card.querySelector(".info");
-    let acciones = card.querySelector(".acciones");
+  tarjetas.forEach((card) => {
+    let id = card.getAttribute("data-id");
+    let idNumerico = parseInt(id);
 
-    info.innerHTML =
-      '<img src="' +
-      producto.imagen +
-      '" alt="' +
-      producto.nombre +
-      '" width="150">' +
-      "<h5>" +
-      producto.nombre +
-      "</h5>" +
-      "<p>Precio: $" +
-      producto.precio.toLocaleString("es-CO") +
-      "</p>";
+    let producto = productos[idNumerico - 1];
 
-    if (acciones) {
-      acciones.innerHTML =
-        '<button class="btn btn-agregar mt-2" data-id="' +
-        id +
-        '">Agregar al Carrito</button>';
+    if (producto) {
+      let info = card.querySelector(".info");
+      let acciones = card.querySelector(".acciones");
+
+      info.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}" width="150" loading="lazy" decoding="async"/>
+        <h5>${producto.nombre}</h5>
+        <p>Precio: $${producto.precio.toLocaleString("es-CO")}</p>
+      `;
+
+      if (acciones) {
+        acciones.innerHTML = `
+          <button class="btn btn-agregar mt-2" data-id="${id}">
+            Agregar al Carrito
+          </button>
+        `;
+      }
+    } else {
+      console.error(`Error: No se encontró el producto con ID ${id}`);
     }
-  } else {
-    console.error(`Error: No se encontró el producto con ID ${id}`);
-  }
+  });
+
+  actualizarCarritoUI();
+  mostrarCarrito();
 });
+
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
