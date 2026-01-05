@@ -2,7 +2,7 @@
 const productos = [
   {
     id: 1,
-    nombre: "Vestido de baño clasico",
+    nombre: "Vestido de baño clásico",
     precio: 48900,
     imagen: "img/01vestido-bano-clasico.png"
   },
